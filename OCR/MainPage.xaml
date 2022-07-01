@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:OCR="clr-namespace:OCR;assembly=OCR" 
+             x:DataType="OCR:MainPageViewModel"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="OCR.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#9900cc" Padding="24" CornerRadius="0">
+            <Label Text="OCR" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <!--<Image Source="" x:Name="WithoutCrop" HeightRequest="100" WidthRequest="100"/>
+        <Image Source="" x:Name="WithCrop" HeightRequest="100" WidthRequest="100"/>-->
+        <Button Text="Scan"
+                Padding="20"
+                Margin="20"
+                FontSize="Title"
+                Command="{Binding ScanCommand}"
+                HorizontalOptions="Center"/>
+    </StackLayout>
+</ContentPage>
